@@ -1,0 +1,46 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form">
+	<Dialog title="{i18n>User Form}" contentWidth="1000px"  xmlns:form="sap.ui.layout.form">
+		<form:SimpleForm
+			layout="ResponsiveGridLayout" 
+						editable="true"
+						
+						labelSpanXL="5" 
+						labelSpanL="4" 
+						labelSpanM="5" 
+						labelSpanS="3" 
+						
+						emptySpanXL="4"
+						emptySpanL="6"
+						emptySpanM="6" 
+						emptySpanS="3" 
+						
+						columnsXL="6" 
+						columnsL="3" 
+						columnsM="3">
+			
+						<Label text="Employee Id"></Label>
+						<Text text="{TenDataModel>/SelectedList/oEmpId}"></Text>
+						
+						<Label text="Employee Name" ></Label>
+						<Text text="{TenDataModel>/SelectedList/oEmpName}"></Text>
+						
+						<Label text="Employee Age" ></Label>
+						<Text text="{TenDataModel>/SelectedList/oEmpAge}"></Text>
+							
+						<Label text="Employee Designation"></Label>
+						<Text text="{TenDataModel>/SelectedList/oEmpDesignation}"></Text>
+							
+						<Label text="Employee Technical Skills" ></Label>
+						<Text text="{TenDataModel>/SelectedList/oEmpTechnicalSkills}"></Text>
+						
+						<Label text="Employee Intersested Jobs"></Label>
+						<Text text="{TenDataModel>/SelectedList/oEmpInterestedJob}"></Text>
+						
+						<Label text="Employee Place"></Label>
+						<Text text="{TenDataModel>/SelectedList/oEmpPlace}"></Text>
+					
+				</form:SimpleForm>
+					
+					<endButton>	<Button text="Close" press="onCloseFn2" type="Reject"> </Button> </endButton>
+	</Dialog>
+	</core:FragmentDefinition>

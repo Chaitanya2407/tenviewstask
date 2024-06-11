@@ -1,0 +1,261 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form" xmlns:layout="sap.ui.layout">
+	<Dialog title="{i18n>User Details}" contentWidth="1500px"  >
+					<layout:Grid id="iconForm1">
+						<Label text="{i18n>iconEmployeeName}" required="true">
+							<layoutData>
+								<layout:GridData span="L2 M3 S8" indent="L3 M3 S8"></layout:GridData>
+							</layoutData>
+						</Label>
+						<Input id="iconTableEmpName" placeholder="Name" type="Text" value="{TenDataModel>/form1entity/oEmpName}"></Input>
+						<Label text="{i18n>iconEmployeeEmailId}" required="true">
+							<layoutData>
+								<layout:GridData span="L2 M3 S8" indent="L3 M3 S8" linebreakL="true"></layout:GridData>
+							</layoutData>
+						</Label>
+						<Input id="iconEmpEmailId" placeholder="Email Id" type="Email" value="{TenDataModel>/form1entity/oEmpEmailId}"></Input>
+						<Label text="{i18n>iconEmployeeMobileNo}" required="true">
+							<layoutData>
+								<layout:GridData span="L2 M3 S8" indent="L3 M3 S8" linebreakL="true"></layout:GridData>
+							</layoutData>
+						</Label>
+						<Input id="iconEmpMobileNo" placeholder="Mobile Number" type="Tel" value="{TenDataModel>/form1entity/oEmpMobileNo}"></Input>
+						<Label text="{i18n>iconEmployeeGender}" required="true">
+							<layoutData>
+								<layout:GridData span="L2 M3 S8" indent="L3 M3 S8" linebreakL="true"></layout:GridData>
+							</layoutData>
+						</Label>
+						<HBox>
+							<RadioButton text="Male" id="iconGenderTableMale"></RadioButton>
+							<RadioButton text="Female" id="iconGenderTableFemale" class="sapUiSmallMarginBegin"></RadioButton>
+						</HBox>
+					
+						<Label text="{i18n>iconEmployeeHobbies}" required="true">
+							<layoutData>
+								<layout:GridData span="L2 M3 S8" indent="L3 M3 S8" linebreakL="true"></layout:GridData>
+							</layoutData>
+						</Label>
+						<MultiComboBox id="iconEmpHobbies" placeholder="Select Hobbies" items="{TenDataModel>/EmployeeHobbies}" value="{TenDataModel>/form1entity/oEmpHobbies}">
+							<core:Item key="{TenDataModel>key}" text="{TenDataModel>text}" ></core:Item>
+						</MultiComboBox>
+						
+						<Label text="{i18n>iconEmployeeAge}" required="true">
+							<layoutData>
+								<layout:GridData span="L2 M3 S8" indent="L3 M3 S8" linebreakL="true"></layout:GridData>
+							</layoutData>
+						</Label>
+						<ComboBox id="iconEmpAge" placeholder="Select Age" items="{TenDataModel>/EmployeeAge}" width="300px" change="iconForm1Submit" value="{TenDataModel>/form1entity/oEmpAge}">
+							<core:Item key="{TenDataModel>key}" text="{TenDataModel>text}"></core:Item>
+						</ComboBox>
+						
+					</layout:Grid>
+					
+					<FlexBox justifyContent="Center">
+						<Button id="saveButton1" text="Save" type="Emphasized" press="iconSaveButton1"></Button>
+					</FlexBox>
+					
+					<endButton>	<Button text="Close" press="onCloseFn1" type="Reject"> </Button> </endButton>
+					
+					
+					
+					
+					<form:SimpleForm id="simpleForm2View1" layout="ResponsiveGridLayout" editable="true" labelSpanXL="5" labelSpanL="4" labelSpanM="5" labelSpanS="3" emptySpanXL="4"
+						emptySpanL="4" emptySpanM="6" emptySpanS="3" columnsXL="6" columnsL="3" columnsM="3" title="Employee Form" visible="false">
+						<Label text="{i18n>iconEmployeeDNo}" required="true" design="Bold"></Label>
+						<Input placeholder="Door No" id="iconEmpDNo" type="Text" value="{TenDataModel>/form2entity/oEmpDNo}"></Input>
+						<Label text="{i18n>iconEmployeeBuilding} " required="true" design="Bold"></Label>
+						<Input placeholder="Building/Street Name" id="iconEmpBuildStreetName" type="Text" value="{TenDataModel>/form2entity/oEmpStreetName}"></Input>
+						<Label text="{i18n>iconEmployeeLandMark} " required="true" design="Bold"></Label>
+						<Input placeholder="LandMark" id="iconEmpLandmark" type="Text" value="{TenDataModel>/form2entity/oEmpLandmark}"></Input>
+						<Label text="{i18n>iconEmployeeState} " required="true" design="Bold"></Label>
+						<ComboBox placeholder="Select State" id="iconEmpState" items="{TenDataModel>/EmployeeState}" value="{TenDataModel>/form2entity/oEmpState}">
+							<core:Item key="{TenDataModel>key}" text="{TenDataModel>text}"></core:Item>
+						</ComboBox>
+						<Label text="{i18n>iconEmployeeCity} " required="true" design="Bold"></Label>
+						<ComboBox placeholder="City" id="iconEmpCity" items="{TenDataModel>/EmployeeCity}" value="{TenDataModel>/form2entity/oEmpCity}">
+							<core:Item key="{TenDataModel>key}" text="{TenDataModel>text}"></core:Item>
+						</ComboBox>
+						<Label text="{i18n>iconEmployeePincode}" required="true" design="Bold"></Label>
+						<Input placeholder="Pincode" id="iconEmpPincode" type="Number" value="{TenDataModel>/form2entity/oEmpPincode}"></Input>
+						<Label text="{i18n>iconEmployeeDistrictName}" required="true" design="Bold"></Label>
+						<ComboBox placeholder="Select District" id="iconEmpDistrict" items="{TenDataModel>/EmployeeDistrict}" change="iconForm2Submit" value="{TenDataModel>/form2entity/oEmpDistrict}">
+							<core:Item key="{TenDataModel>key}" text="{TenDataModel>text}"></core:Item>
+						</ComboBox>
+						<Label></Label>
+						<FlexBox justifyContent="Center">
+							<Button id="saveButton2" text="Save" type="Emphasized" press="iconSaveButton2" visible="false"></Button>
+						</FlexBox>
+						</form:SimpleForm>
+						
+						
+						
+						
+						
+						
+						<Panel id="panelForm" visible="false">
+							<FlexBox justifyContent="Center">
+								<Label text="{i18n>iconNomineeName}" required="true" class="sapUiLargeMarginEnd"></Label>
+								<Input id="iconNomName" type="Text" placeholder="Nominee Name" class="sapUiLargeMarginBegin" value="{TenDataModel>/form3entity/oNomName}"></Input>
+							</FlexBox>
+							<FlexBox justifyContent="Center">
+								<Label text="{i18n>iconNomineeEmailId}" required="true" class="sapUiMediumMarginEnd"></Label>
+								<Input id="iconNomEmailId" type="Email" placeholder="Nominee Email Id" class="sapUiLargeMarginBegin" value="{TenDataModel>/form3entity/oNomEmailId}"></Input>
+							</FlexBox>
+								<FlexBox justifyContent="Center">
+								<Label text="{i18n>iconNomineeMobileNo}" required="true"></Label>
+								<Input id="iconNomMobileNo" type="Tel" placeholder="Nominee Mobile No" class="sapUiLargeMarginBegin" value="{TenDataModel>/form3entity/oNomMobileNo}"></Input>
+							</FlexBox>
+							<FlexBox justifyContent="Center">
+								<Label text="{i18n>iconNomineeDob}" required="true" ></Label>
+								<DatePicker id="iconNomDob"  class="sapUiLargeMarginBegin" displayFormat="dd.MM.YYYY" value="{TenDataModel>/form3entity/oNomDob}"></DatePicker>
+							</FlexBox>
+							<FlexBox justifyContent="Center">
+								<Label text="{i18n>iconNomineeAddress}" required="true" class="sapUiLargeMarginEnd"></Label>
+								<TextArea id="iconNomAddress"  placeholder="NomineeAddress" class="sapUiLargeMarginBegin" value="{TenDataModel>/form3entity/oNomAddress}"></TextArea>
+							</FlexBox>
+							<FlexBox justifyContent="Center">
+								<Label text="{i18n>iconNomineeGender}" required="true" class="sapUiLargeMarginEnd" ></Label>
+								<RadioButton id="iconNomineeGenderM" text="Male" class="sapUiLargeMarginBegin"></RadioButton>
+								<RadioButton id="iconNomineeGenderF" text="Female" ></RadioButton>
+							</FlexBox>
+							<FlexBox justifyContent="Center">
+								<Label text="{i18n>iconNomineeRelation}" required="true"></Label>
+								<ComboBox id="iconNomRelation" placeholder="Nominee Relation Type" class="sapUiLargeMarginBegin" items="{TenDataModel>/NomineeRelation}" change="iconForm3Submit" value="{TenDataModel>/form3entity/oNomRelation}">
+								<core:Item key="{TenDataModel>key}" text="{TenDataModel>text}"></core:Item>
+								</ComboBox>
+							</FlexBox>
+						</Panel>
+						
+							<FlexBox justifyContent="Center">
+							<Button id="saveButton3" text="Save" type="Emphasized" press="iconSaveButton3" visible="false"></Button>
+							</FlexBox>
+							
+							
+							
+							
+							
+							
+							<VBox id="vboxForm" visible="false">
+						<HBox justifyContent="Center">
+							<Label text="{i18n>iconHealthName}" required="true" class="sapUiLargeMarginEnd"></Label>
+							<Input id="iconHealthName" placeholder="Name" class="sapUiLargeMarginEnd" value="{TenDataModel>/form4entity/oEmpName}"></Input>
+						</HBox>
+						<HBox justifyContent="Center">
+							<Label text="{i18n>iconHealthHeight}" required="true" class="sapUiLargeMarginEnd"></Label>
+							<Input id="iconHealthHeight" placeholder="Height" class="sapUiLargeMarginEnd" type="Number" value="{TenDataModel>/form4entity/oEmpHeight}"></Input>
+						</HBox>
+						<HBox justifyContent="Center">
+							<Label text="{i18n>iconHealthWeight}" required="true" class="sapUiLargeMarginEnd"></Label>
+							<Input id="iconHealthWeight" placeholder="Weight" class="sapUiSmallMarginBegin" type="Number" value="{TenDataModel>/form4entity/oEmpWeight}"></Input>
+						</HBox>
+						<HBox justifyContent="Center">
+							<Label text="{i18n>iconHealthBloodGroup}" required="true" class="sapUiLargeMarginEnd"></Label>
+							<ComboBox id="iconHealthBloodGroup" placeholder="Blood Group" class="sapUiMediumMarginBegin" items="{TenDataModel>/NomineeBloodGroup}" value="{TenDataModel>/form4entity/oEmpBloodGroup}">
+								<core:Item key="{TenDataModel>key}" text="{TenDataModel>text}"></core:Item>
+							</ComboBox>
+						</HBox>
+						<HBox justifyContent="Center">
+							<Label text="{i18n>iconHealthDisease}" required="true" class="sapUiLargeMarginEnd"></Label>
+							<MultiComboBox id="iconHealthDisease" placeholder="Disease" class="sapUiLargeMarginEnd" items="{TenDataModel>/Disease}" value="{TenDataModel>/form4entity/oEmpDisease}">
+								<core:Item key="{TenDataModel>key}" text="{TenDataModel>text}"></core:Item>
+							</MultiComboBox>
+						</HBox>
+						<HBox justifyContent="Center">
+							<Label text="{i18n>iconHealthHospital}" required="true" class="sapUiLargeMarginEnd"></Label>
+							<ComboBox id="iconHealthHospital" placeholder="Hospitals" class="sapUiMediumMarginBegin" items="{TenDataModel>/Hospitals}"
+								change="iconForm4Submit" value="{TenDataModel>/form4entity/oEmpHospital}">
+								<core:Item key="{TenDataModel>key}" text="{TenDataModel>text}"></core:Item>
+							</ComboBox>
+						</HBox>
+					</VBox>
+					
+						<FlexBox justifyContent="Center">
+							<Button id="saveButton4" text="Save" type="Emphasized" press="iconSaveButton4" visible="false"></Button>
+						</FlexBox>
+						
+						
+						
+						
+						
+						
+						
+						<layout:Grid id="gridLayoutForm" visible="false">
+							
+						<Label text="{i18n>iconEmployeeId}" required="true">
+							<layoutData>
+								<layout:GridData span="L2 M3 S8" indent="L3 M3 S8" linebreakL="true"></layout:GridData>
+							</layoutData>
+						</Label>
+						<Input id="iconEmployeeId" placeholder="Employee Id" type="Number" value="{TenDataModel>/form5entity/oEmpId}"></Input>
+						
+						<Label text="{i18n>iconEmployeeWorkMail}" required="true">
+							<layoutData>
+								<layout:GridData span="L2 M3 S8" indent="L3 M3 S8" linebreakL="true"></layout:GridData>
+							</layoutData>
+						</Label>
+						<Input id="iconEmployeeWorkMail" placeholder="Employee Work Email Id" type="Email" value="{TenDataModel>/form5entity/oEmpWorkMail}"></Input>
+						
+						<Label text="{i18n>iconEmployeeWorkMobileNo}" required="true">
+							<layoutData>
+								<layout:GridData span="L2 M3 S8" indent="L3 M3 S8" linebreakL="true"></layout:GridData>
+							</layoutData>
+						</Label>
+						<Input id="iconEmployeeWorkMobileNo" placeholder="Employee Work Mobile Number" type="Tel" value="{TenDataModel>/form5entity/oEmpWorkMobileNo}"></Input>
+						
+						<Label text="{i18n>iconEmployeeLanguages}" required="true">
+							<layoutData>
+								<layout:GridData span="L2 M3 S8" indent="L3 M3 S8"></layout:GridData>
+							</layoutData>
+						</Label>
+						<MultiComboBox id="iconEmployeeLanguage" placeholder="Employee Languages" items="{TenDataModel>/personlanguages}" value="{TenDataModel>/form5entity/oEmpLanguage}">
+							<core:Item key="{TenDataModel>key}" text="{TenDataModel>text}"></core:Item>
+						</MultiComboBox>
+
+						<Label text="{i18n>iconEmployeeJobType}" required="true">
+							<layoutData>
+								<layout:GridData span="L2 M3 S8" indent="L3 M3 S8" linebreakL="true"></layout:GridData>
+							</layoutData>
+						</Label>
+							<RadioButtonGroup  columns = "2">
+								<RadioButton text="IT" id="iconEmployeIt" ></RadioButton>
+								<RadioButton text="NON-IT" id="iconEmployeNonIt" class="sapUiSmallMarginEnd"></RadioButton>
+							</RadioButtonGroup>
+
+						<Label text="{i18n>iconEmployeeDesignation}" required="true">
+							<layoutData>
+								<layout:GridData span="L2 M3 S8" indent="L3 M3 S8" linebreakL="true"></layout:GridData>
+							</layoutData>
+						</Label>
+						<ComboBox id="iconEmployeeDesignation" placeholder="Select Designation" items="{TenDataModel>/employeeMultiComboBoxJob}" width="300px" value="{TenDataModel>/form5entity/oEmpDesignation}">
+							<core:Item key="{TenDataModel>key}" text="{TenDataModel>text}"></core:Item>
+						</ComboBox>
+						
+							<Label text="{i18n>iconEmployeeWorkLocation}" required="true">
+							<layoutData>
+								<layout:GridData span="L2 M3 S8" indent="L3 M3 S8" linebreakL="true"></layout:GridData>
+							</layoutData>
+						</Label>
+						<ComboBox id="iconEmployeeWorkLocation" placeholder="Select Work Location" items="{TenDataModel>/empComboBoxPlace}"  change="iconForm5Submit" width="300px" value="{TenDataModel>/form5entity/oEmpLocation}">
+							<core:Item key="{TenDataModel>key}" text="{TenDataModel>text}"></core:Item>
+						</ComboBox>	
+						
+					</layout:Grid>
+					
+						<FlexBox justifyContent="Center">
+							<Button id="saveButton5" text="Save" type="Emphasized" press="iconSaveButton5" visible="false"></Button>
+						</FlexBox>
+						
+						
+						
+						
+						
+						
+						
+						
+							<VBox id="iconDynamicForm" visible="true"/>
+					<FlexBox justifyContent="Center">
+						<VBox id="saveButton6" class="sapUiLargeMarginBegin" visible="false" />
+					</FlexBox>
+						
+					
+	</Dialog>
+	</core:FragmentDefinition>

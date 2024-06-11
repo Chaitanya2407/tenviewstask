@@ -1,0 +1,60 @@
+<mvc:View controllerName="com.dpz_Ten_Views_Task.controller.View7" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m"  xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form">
+	<App>
+		<pages>
+			<Page title="{i18n>7Th View}" navButtonPress="backBtn" showNavButton="true">
+					<IconTabHeader>
+							<items>
+								<IconTabFilter text="Person details">
+									
+							</IconTabFilter>
+						</items>
+					</IconTabHeader>
+						<form:SimpleForm
+										layout="ResponsiveGridLayout" 
+										editable="true"
+										
+										labelSpanXL="5" 
+										labelSpanL="5" 
+										labelSpanM="5" 
+										labelSpanS="3" 
+										
+										emptySpanXL="4"
+										emptySpanL="6"
+										emptySpanM="6" 
+										emptySpanS="3" 
+										
+										columnsXL="6" 
+										columnsL="3" 
+										columnsM="3">
+							
+										<Label text="Person Name"></Label>
+										<Text text="{TenDataModel>/personFormArray/oPersonName}"></Text>
+										
+										<Label text="Person Age" ></Label>
+										<Text text="{TenDataModel>/personFormArray/oPersonAge}"></Text>
+										
+										<Label text="Person Mobile No" ></Label>
+										<Text text="{TenDataModel>/personFormArray/oPersonMobileNo}"></Text>
+											
+										<Label text="Person Email Id"></Label>
+										<Text text="{TenDataModel>/personFormArray/oPersonEmailId}"></Text>
+											
+										<Label text="Person Gender" ></Label>
+										<Text text="{TenDataModel>/personFormArray/oPersonGender}"></Text>
+										
+										<Label text="Person Residence"></Label>
+										<Text text="{TenDataModel>/personFormArray/oPersonResidence}"></Text>
+										
+										<Label text="Person Language"></Label>
+										<Text text="{TenDataModel>/personFormArray/oPersonLanguage}"></Text>
+										
+										<Label text="Person City"></Label>
+										<Text text="{TenDataModel>/personFormArray/oPersonCity}"></Text>
+									
+								</form:SimpleForm>
+								
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

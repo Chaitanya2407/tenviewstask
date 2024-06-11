@@ -1,0 +1,100 @@
+<mvc:View controllerName="com.dpz_Ten_Views_Task.controller.View9" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m"  xmlns:core="sap.ui.core" >
+	<App>
+		<pages>
+			<Page title="{i18n>title}" navButtonPress="backBtn" showNavButton="true">
+				<content>
+					<Table id = "studentTable1" items= "{TenDataModel>/studentArray}" >
+						<columns>
+							<Column>
+								<Text text="Name"></Text>
+							</Column>
+							<Column>
+								<Text text="Roll No"></Text>
+							</Column>
+							<Column>
+								<Text text="Mobile Number"></Text>
+							</Column>
+							<Column>
+								<Text text="Class"></Text>
+							</Column>
+								<Column>
+								<Text text="Language"></Text>
+							</Column>
+								<Column>
+								<Text text="Subject"></Text>
+							</Column>
+							</columns>
+						
+								<ColumnListItem press="onTableRowPress"  type="Active">
+									<cells>
+										<Text  text="{TenDataModel>oStudentName}"></Text>
+										<Text  text="{TenDataModel>oStudentRollNo}"></Text>
+										<Text  text="{TenDataModel>oStudentMobileNo}"></Text>
+										<Text  text="{TenDataModel>oStudentClass}"></Text>
+										<Text  text="{TenDataModel>oStudentLanguage}"></Text>
+										<Text  text="{TenDataModel>oStudentSubject}"></Text>
+									</cells>
+								</ColumnListItem>
+					</Table>
+					
+					<List headerText="Standard List Form"  items="{TenDataModel>/employeeArray}" id="empDetailsId">
+							<StandardListItem 
+								title="{TenDataModel>oEmpId}"
+								description="{TenDataModel>oEmpName}"
+								info="{TenDataModel>oEmpAge}" press="onListClick" type="Active">
+							</StandardListItem>
+					</List>
+					
+					
+					<IconTabBar expandable="false"
+            				selectedKey="tab1"
+            				id="myIconTabBar">
+						<items>
+							<IconTabFilter text="Company Details">
+								<List headerText="Custom Content" items="{TenDataModel>/CompanyFormArray}">
+									<CustomListItem>
+										<FlexBox justifyContent="Center">
+											<VBox>
+												<HBox>
+													<Label text="Company Name" class="sapUiMediumMarginEnd"></Label>
+													<Text text="{TenDataModel>oCompanyName}" class="sapUiLargeMarginBegin"></Text>
+												</HBox>
+												<HBox>
+													<Label text="Company Founded"  class="sapUiMediumMarginEnd"></Label>
+													<Text text="{TenDataModel>oCompanyFounded}" class="sapUiMediumMarginBegin"></Text>
+												</HBox>
+												<HBox>
+													<Label text="Company Email Id"  class="sapUiMediumMarginEnd"></Label>
+													<Text text="{TenDataModel>oCompanyEmailId}" class="sapUiMediumMarginBegin"></Text>
+												</HBox>
+												<HBox>
+													<Label text="Company Mobile Number"  class="sapUiMediumMarginEnd"></Label>
+													<Text text="{TenDataModel>oCompanyMobileNo}" class="sapUiTinyMarginBegin"></Text>
+												</HBox>
+												<HBox>
+													<Label text="No.Of Employee"  class="sapUiMediumMarginEnd"></Label>
+													<Text text="{TenDataModel>oCompanyEmployees}" class="sapUiLargeMarginBegin"></Text>
+												</HBox>
+												<HBox>
+													<Label text="Company Type"  class="sapUiMediumMarginEnd"></Label>
+													<Text text="{TenDataModel>oCompanyType}" class="sapUiLargeMarginBegin"></Text>
+												</HBox>
+												<HBox>
+													<Label text="Company Srvices"  class="sapUiMediumMarginEnd"></Label>
+													<Text text="{TenDataModel>oCompanyServices}" class="sapUiLargeMarginBegin"></Text>
+												</HBox>
+											</VBox>
+										</FlexBox>
+									</CustomListItem>
+								</List>
+							</IconTabFilter>
+							
+							<IconTabFilter></IconTabFilter>
+						</items>	
+					</IconTabBar>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

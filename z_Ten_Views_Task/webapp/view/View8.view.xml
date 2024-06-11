@@ -1,0 +1,19 @@
+<mvc:View controllerName="com.dpz_Ten_Views_Task.controller.View8" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:core="sap.ui.core">
+	<App>
+		<pages>
+			<Page title="{i18n>8Th View}" navButtonPress="backBtn" showNavButton="true">
+				<content>
+					<ObjectHeader title="Student Form Details" binding="{TenDataModel>/studentFormArray}">
+						<ObjectAttribute title="Student Name" text="{TenDataModel>oSName}"></ObjectAttribute>
+						<ObjectAttribute title="Student Roll No" text="{TenDataModel>oSRollNo}"></ObjectAttribute>
+						<ObjectAttribute title="Student Age" text="{TenDataModel>oSAge}"></ObjectAttribute>
+						<ObjectAttribute title="Student Hobbies" text="{TenDataModel>oSHobbies}"></ObjectAttribute>
+						<ObjectAttribute title="Student City" text="{TenDataModel>oSCity}"></ObjectAttribute>
+						<ObjectAttribute title="Student State" text="{TenDataModel>oSState}"></ObjectAttribute>
+					</ObjectHeader>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

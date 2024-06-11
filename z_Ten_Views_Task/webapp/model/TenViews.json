@@ -1,0 +1,647 @@
+{
+	"studentComboBox" : [
+		{
+			"text" : "Telugu",
+			"key" : "telugu"
+		},
+		{
+			"text" : "Hindi",
+			"key" : "hindi"
+		},
+		{
+			"text" : "English",
+			"key" : "english"
+		}
+		],
+		
+	"studentMultiComboBox" : [
+		{
+			"text" : "Telugu",
+			"key" : "telugu"
+		},
+		{
+			"text" : "Hindi",
+			"key" : "hindi"
+		},
+		{
+			"text" : "English",
+			"key" : "english"
+		},
+		{
+			"text" : "Maths",
+			"key" : "maths"
+		},
+		{
+			"text" : "Science",
+			"key" : "science"
+		},
+		{
+			"text" : "Social",
+			"key" : "social"
+		}
+		],
+		
+		"employeeMultiComboBox" : [
+		{
+			"text" : "SAP",
+			"key" : "sap"
+		},
+		{
+			"text" : "JAVA",
+			"key" : "java"
+		},
+		{
+			"text" : "PYTHON",
+			"key" : "python"
+		},
+		{
+			"text" : "SQL",
+			"key" : "sql"
+		},
+		{
+			"text" : "AWS",
+			"key" : "aws"
+		},
+		{
+			"text" : "DEVOPS",
+			"key" : "devops"
+		}
+		],
+		
+		"employeeMultiComboBoxJob" : [
+		{
+			"text" : "SAP",
+			"key" : "sap"
+		},
+		{
+			"text" : "JAVA",
+			"key" : "java"
+		},
+		{
+			"text" : "PYTHON",
+			"key" : "python"
+		},
+		{
+			"text" : "SQL",
+			"key" : "sql"
+		},
+		{
+			"text" : "AWS",
+			"key" : "aws"
+		},
+		{
+			"text" : "DEVOPS",
+			"key" : "devops"
+		}
+		],
+		
+		"empComboBoxPlace" : [
+		{
+			"text" : "Hyderabad",
+			"key" : "Hyderabad"
+		},
+		{
+			"text" : "Bangalore",
+			"key" : "Bangalore"
+		},
+		{
+			"text" : "Chennai",
+			"key" : "Chennai"
+		},
+		{
+			"text" : "Delhi",
+			"key" : "Delhi"
+		},
+		{
+			"text" : "Kolkatta",
+			"key" : "Kolkatta"
+		},
+		{
+			"text" : "Pune",
+			"key" : "Pune"
+		}
+		],
+		
+		"studentCity" : [
+		{
+			"text" : "Hyderabad",
+			"key" : "Hyderabad"
+		},
+		{
+			"text" : "Bangalore",
+			"key" : "Bangalore"
+		},
+		{
+			"text" : "Chennai",
+			"key" : "Chennai"
+		},
+		{
+			"text" : "Vizag",
+			"key" : "vizag"
+		},
+		{
+			"text" : "Thiruvananthapuram",
+			"key" : "thiruvananthapuram"
+		},
+		{
+			"text" : "Mumbai",
+			"key" : "mumbai"
+		}
+		],
+		
+		
+		"studentState" : [
+		{
+			"text" : "Telangana",
+			"key" : "telangana"
+		},
+		{
+			"text" : "Karnataka",
+			"key" : "karnataka"
+		},
+		{
+			"text" : "Tamilnadu",
+			"key" : "tamilnadu"
+		},
+		{
+			"text" : "Andhra Pradesh",
+			"key" : "andhra pradesh"
+		},
+		{
+			"text" : "Kerala",
+			"key" : "kerala"
+		},
+		{
+			"text" : "Maharastra",
+			"key" : "maharastra"
+		}
+		],
+		
+		"studentHobbies" : [
+			{
+				"text" : "Reading",
+				"key" : "reading"
+			},
+			{
+				"text" : "Browsing",
+				"key" : "browsing"
+			},
+			{
+				"text" : "Playing",
+				"key" : "playing"
+			},
+			{
+				"text" : "Dancing",
+				"key" : "dancing"
+			},
+			{
+				"text" : "Travelling",
+				"key" : "travelling"
+			}
+			],
+			
+		"personCity" : [
+			{
+			 	"text" : "Hyderabad",
+				"key" : "Hyderabad"
+			},
+			{
+				"text" : "Bangalore",
+				"key" : "Bangalore"
+			},
+			{
+				"text" : "Chennai",
+				"key" : "Chennai"
+			},
+			{
+				"text" : "Vizag",
+				"key" : "vizag"
+			},
+			{
+				"text" : "Delhi",
+				"key" : "delhi"
+			},
+			{
+				"text" : "Mumbai",
+				"key" : "mumbai"
+			}
+			],	
+			
+		"personlanguages" : [
+		{
+			"text" : "English",
+			"key" : "english"
+		},
+		{
+			"text" : "French",
+			"key" : "french"
+		},
+		{
+			"text" : "Spanish",
+			"key" : "spanish"
+		},
+		{
+			"text" : "Hindi",
+			"key" : "hindi"
+		},
+		{
+			"text" : "Russian",
+			"key" : "russian"
+		},
+		{
+			"text" : "Arabic",
+			"key" : "arabic"
+		}
+		],
+		
+		"busses" : [
+			{
+				"text" : "AP 07 KE 7777 - Tirupati To Hyderabad",
+				"key" : "Bus1"
+			},
+			{
+				"text" : "KA 39 CS 6688 - Bangalore To Hyderabad",
+				"key" : "Bus2"
+			},
+			{
+				"text" : "TS 09 BJ 6767 - Hyderabad To Mumbai",
+				"key" : "Bus3"
+			},
+			{
+				"text" : "TS 28 JE 1314 - Hyderabad To Vizag",
+				"key" : "Bus4"
+			},
+			{
+				"text" : "KA 36 HB 9999 - Bangalore To Channai",
+				"key" : "Bus5"
+			}
+			],
+			
+			"noOfEmployees" : [
+				{
+					"text" : "1-10",
+					"key"  : "1-10"
+				},
+				{
+					"text" : "1-50",
+					"key"  : "1-50"
+				},
+				{
+					"text" : "1-100",
+					"key"  : "1-100"
+				},
+				{
+					"text" : "1-250",
+					"key"  : "1-250"
+				},
+				{
+					"text" : "1-500",
+					"key"  : "1-500"
+				}
+				],
+				
+				"companyServices" : [
+					{
+						"text" : "Cyber Security",
+						"key"  : "CS"
+					},
+					{
+						"text" : "Artificial Intelligence",
+						"key"  : "AI"
+					},
+					{
+						"text" : "Web Development",
+						"key"  : "WD"
+					},
+					{
+						"text" : "Consulting",
+						"key"  : "CNG"
+					},
+					{
+						"text" : "Information Technology",
+						"key"  : "IT"
+					}
+					],
+					
+			"EmployeeHobbies" : [
+			{
+				"text" : "Reading",
+				"key" : "reading"
+			},
+			{
+				"text" : "Browsing",
+				"key" : "browsing"
+			},
+			{
+				"text" : "Playing",
+				"key" : "playing"
+			},
+			{
+				"text" : "Dancing",
+				"key" : "dancing"
+			},
+			{
+				"text" : "Travelling",
+				"key" : "travelling"
+			}
+			],		
+			
+			
+			"EmployeeAge" : [
+				{
+					"text" : "18-22",
+					"key"  : "18-22"
+				},
+				{
+					"text" : "23-27",
+					"key"  : "23-27"
+				},
+				{
+					"text" : "28-32",
+					"key"  : "28-32"
+				},
+				{
+					"text" : "33-37",
+					"key"  : "33-37"
+				},
+				{
+					"text" : "38-42",
+					"key"  : "38-42"
+				},
+				{
+					"text" : "43-47",
+					"key"  : "43-47"
+				},
+				{
+					"text" : "48-52",
+					"key"  : "48-52"
+				},
+				{
+					"text" : "53-57",
+					"key"  : "53-57"
+				}
+				],
+				
+				
+				"EmployeeCity" : [
+		{
+			"text" : "Hyderabad",
+			"key" : "Hyderabad"
+		},
+		{
+			"text" : "Bangalore",
+			"key" : "Bangalore"
+		},
+		{
+			"text" : "Chennai",
+			"key" : "Chennai"
+		},
+		{
+			"text" : "Vizag",
+			"key" : "vizag"
+		},
+		{
+			"text" : "Thiruvananthapuram",
+			"key" : "thiruvananthapuram"
+		},
+		{
+			"text" : "Mumbai",
+			"key" : "mumbai"
+		}
+		],
+		
+		
+		"EmployeeState" : [
+		{
+			"text" : "Telangana",
+			"key" : "telangana"
+		},
+		{
+			"text" : "Karnataka",
+			"key" : "karnataka"
+		},
+		{
+			"text" : "Tamilnadu",
+			"key" : "tamilnadu"
+		},
+		{
+			"text" : "Andhra Pradesh",
+			"key" : "andhra pradesh"
+		},
+		{
+			"text" : "Kerala",
+			"key" : "kerala"
+		},
+		{
+			"text" : "Maharastra",
+			"key" : "maharastra"
+		}
+		],
+		
+		"EmployeeDistrict" : [
+		{
+			"text" : "Chittoor",
+			"key" : "Chittoor"
+		},
+		{
+			"text" : "Karnool",
+			"key" : "Karnool"
+		},
+		{
+			"text" : "Kadapa",
+			"key" : "Kadapa"
+		},
+		{
+			"text" : "Krishna",
+			"key" : "Krishna"
+		},
+		{
+			"text" : "East Godavari",
+			"key" : "East Godavari"
+		},
+		{
+			"text" : "West Godavari",
+			"key" : "West Godavari"
+		}
+		],
+		
+		"NomineeBloodGroup" : [
+		{
+			"text" : "A+",
+			"key" : "A+"
+		},
+		{
+			"text" : "B+",
+			"key" : "B+"
+		},
+		{
+			"text" : "O+",
+			"key" : "O+"
+		},
+		{
+			"text" : "AB+",
+			"key" : "AB+"
+		},
+		{
+			"text" : "A-",
+			"key" : "A-"
+		},
+		{
+			"text" : "B-",
+			"key" : "B-"
+		},
+		{
+			"text" : "O-",
+			"key" : "O-"
+		},
+		{
+			"text" : "AB-",
+			"key" : "AB-"
+		}
+		],
+		
+		"NomineeRelation" : [
+		{
+			"text" : "Father",
+			"key" : "Father"
+		},
+		{
+			"text" : "Mother",
+			"key" : "Mother"
+		},
+		{
+			"text" : "Husband",
+			"key" : "Husband"
+		},
+		{
+			"text" : "Wife",
+			"key" : "Wife"
+		},
+		{
+			"text" : "Others",
+			"key" : "Others"
+		}
+		],
+		
+		
+		"Disease" : [
+		{
+			"text" : "Diabatic",
+			"key" : "Diabatic"
+		},
+		{
+			"text" : "Blood Cancer",
+			"key" : "Blood Cancer"
+		},
+		{
+			"text" : "Brain Tumer",
+			"key" : "Brain Tumer"
+		},
+		{
+			"text" : "Kidney Disease",
+			"key" : "Kidney Disease"
+		},
+		{
+			"text" : "Heart Disease",
+			"key" : "Heart Disease"
+		},
+		{
+			"text" : "Lung Cancer",
+			"key" : "Lung Cancer"
+		}
+		],
+		
+		"Hospitals" : [
+		{
+			"text" : "apollo Hospitals",
+			"key" : "apollo Hospitals"
+		},
+		{
+			"text" : "Yashodha Hospitals",
+			"key" : "Yashodha Hospitals"
+		},
+		{
+			"text" : "KIMS Hospitals",
+			"key" : "KIMS Hospitals"
+		},
+		{
+			"text" : "Rainbow Hospitals",
+			"key" : "Rainbow Hospitals"
+		},
+		{
+			"text" : "Gandhi Hospitals",
+			"key" : "Gandhi Hospitals"
+		},
+		{
+			"text" : "Image Hospitals",
+			"key" : "Image Hospitals"
+		}
+		],
+		
+		"Experience" : [
+				{
+					"text" : "1 Year Experience",
+					"key"  : "1"
+				},
+				{
+					"text" : "2 Years Experience",
+					"key"  : "2"
+				},
+				{
+					"text" : "3 Years Experience",
+					"key"  : "3"
+				},
+				{
+					"text" : "4 Years Experience",
+					"key"  : "4"
+				},
+				{
+					"text" : "5 Years Experience",
+					"key"  : "5"
+				},
+				{
+					"text" : "6 Years Experience",
+					"key"  : "6"
+				},
+				{
+					"text" : "7 Years Experience",
+					"key"  : "7"
+				},
+				{
+					"text" : "8 Years Experience",
+					"key"  : "8"
+				},
+				{
+					"text" : "9 Years Experience",
+					"key"  : "9"
+				},
+				{
+					"text" : "10 Years Experience",
+					"key"  : "10"
+				}
+				],
+		
+	"studentArray" : [],
+	
+	"employeeArray" : [],
+	
+	"personFormArray" : [],
+	
+	"studentFormArray" : {},
+	
+	"BookingArray" : [],
+	
+	"CompanyFormArray" : [],
+	
+	"iconEmployee1" : [],
+	
+	"iconEmployee2" : [],
+	
+	"iconEmployee3" : [],
+	
+	"iconEmployee4" : [],
+	
+	"iconEmployee5" : [],
+	
+	"iconEmployee6" : []
+}

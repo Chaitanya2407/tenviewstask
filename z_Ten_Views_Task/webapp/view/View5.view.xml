@@ -1,0 +1,289 @@
+
+<mvc:View controllerName="com.dpz_Ten_Views_Task.controller.View5" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m"  xmlns:core="sap.ui.core">
+	<App>
+		<pages>
+			<Page title="{i18n>5Th View}">
+				<IconTabBar expandable="false"
+            				selectedKey="tab1"
+            				id="myIconTabBar" select="onSelectTab3">
+					<items>
+						<IconTabFilter text="Personal"
+						icon="sap-icon://create-form" key="tab1" iconColor="Positive">
+							
+						<FlexBox justifyContent="End">
+							<Button text="Delete" type="Reject" icon="sap-icon://delete" press="iconDeleteBtn1"></Button>
+						</FlexBox>
+							
+					<Table  id = "iconTable1Id" items = "{TenDataModel>/iconEmployee1}" mode="MultiSelect">
+						<columns>
+							<Column>
+								<Text text="Employee Name"></Text>
+							</Column>
+							<Column>
+								<Text text="Employee Email Id"></Text>
+							</Column>
+							<Column>
+								<Text text="Employee Mobile No"></Text>
+							</Column>
+							<Column>
+								<Text text="Employee Gender"></Text>
+							</Column>
+							<Column>
+								<Text text="Employee Hobbies"></Text>
+							</Column>
+							<Column>
+								<Text text="Employee Age"></Text>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem press="onRowTablePress1" type="Active">
+								<cells>
+									<Text text="{TenDataModel>oEmpName}"></Text>
+									<Text text="{TenDataModel>oEmpEmailId}"></Text>
+									<Text text="{TenDataModel>oEmpMobileNo}"></Text>
+									<Text text="{TenDataModel>oEmpGender}"></Text>
+									<Text text="{TenDataModel>oEmpHobbies}"></Text>
+									<Text text="{TenDataModel>oEmpAge}"></Text>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+					
+						</IconTabFilter>
+						
+						<IconTabFilter text="Address"
+							icon="sap-icon://addresses" key="tab2" iconColor="Positive">
+							
+							<FlexBox justifyContent="End">
+								<Button text="Delete" type="Reject" icon="sap-icon://delete"></Button>
+							</FlexBox>
+						
+							<Table  id = "iconTable2Id" items = "{TenDataModel>/iconEmployee2}" mode="MultiSelect">
+						<columns>
+							<Column>
+								<Text text="Employee D.No"></Text>
+							</Column>
+							<Column>
+								<Text text="Employee Street Name"></Text>
+							</Column>
+							<Column>
+								<Text text="Employee Landmark"></Text>
+							</Column>
+							<Column>
+								<Text text="Employee State"></Text>
+							</Column>
+							<Column>
+								<Text text="Employee City"></Text>
+							</Column>
+							<Column>
+								<Text text="Employee Pincode"></Text>
+							</Column>
+							<Column>
+								<Text text="Employee District"></Text>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem press="onRowTablePress2" type="Active">
+								<cells>
+									<Text text="{TenDataModel>oEmpDNo}"></Text>
+									<Text text="{TenDataModel>oEmpStreetName}"></Text>
+									<Text text="{TenDataModel>oEmpLandmark}"></Text>
+									<Text text="{TenDataModel>oEmpState}"></Text>
+									<Text text="{TenDataModel>oEmpCity}"></Text>
+									<Text text="{TenDataModel>oEmpPincode}"></Text>
+									<Text text="{TenDataModel>oEmpDistrict}"></Text>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+						</IconTabFilter>
+						
+						<IconTabFilter text="Nominee"
+							icon="sap-icon://employee" key="tab3" iconColor="Positive">
+							
+							<FlexBox justifyContent="End">
+								<Button text="Delete" type="Reject" icon="sap-icon://delete"></Button>
+							</FlexBox>
+						
+							<Table  id = "iconTable3Id" items = "{TenDataModel>/iconEmployee3}" mode="MultiSelect">
+						<columns>
+							<Column>
+								<Text text="Nominee Name"></Text>
+							</Column>
+							<Column>
+								<Text text="Nominee Email Id"></Text>
+							</Column>
+							<Column>
+								<Text text="Nominee Mobile No"></Text>
+							</Column>
+							<Column>
+								<Text text="Nominee State"></Text>
+							</Column>
+							<Column>
+								<Text text="Nominee City"></Text>
+							</Column>
+							<Column>
+								<Text text="Nominee Pincode"></Text>
+							</Column>
+							<Column>
+								<Text text="Nominee District"></Text>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem press="onRowTablePress3" type="Active">
+								<cells>
+									<Text text="{TenDataModel>oNomName}"></Text>
+									<Text text="{TenDataModel>oNomEmailId}"></Text>
+									<Text text="{TenDataModel>oNomMobileNo}"></Text>
+									<Text text="{TenDataModel>oNomDob}"></Text>
+									<Text text="{TenDataModel>oNomAddress}"></Text>
+									<Text text="{TenDataModel>oNomGender}"></Text>
+									<Text text="{TenDataModel>oNomRelation}"></Text>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+						</IconTabFilter>
+						
+						<IconTabFilter text="Health"
+							icon="sap-icon://stethoscope" key="tab4" iconColor="Positive">
+							
+							<FlexBox justifyContent="End">
+								<Button text="Delete" type="Reject" icon="sap-icon://delete"></Button>
+							</FlexBox>
+						
+							<Table  id = "iconTable4Id" items = "{TenDataModel>/iconEmployee4}" mode="MultiSelect">
+						<columns>
+							<Column>
+								<Text text="Employee Name"></Text>
+							</Column>
+							<Column>
+								<Text text="Employee Height"></Text>
+							</Column>
+							<Column>
+								<Text text="Employee Weight"></Text>
+							</Column>
+							<Column>
+								<Text text="Employee Blood Group"></Text>
+							</Column>
+							<Column>
+								<Text text="Employee Disease"></Text>
+							</Column>
+							<Column>
+								<Text text="Employee Hospital"></Text>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem  press="onRowTablePress4" type="Active">
+								<cells>
+									<Text text="{TenDataModel>oEmpName}"></Text>
+									<Text text="{TenDataModel>oEmpHeight}"></Text>
+									<Text text="{TenDataModel>oEmpWeight}"></Text>
+									<Text text="{TenDataModel>oEmpBloodGroup}"></Text>
+									<Text text="{TenDataModel>oEmpDisease}"></Text>
+									<Text text="{TenDataModel>oEmpHospital}"></Text>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+						</IconTabFilter>
+						
+						<IconTabFilter text="Employee"
+							icon="sap-icon://add-employee" key="tab5" iconColor="Positive">
+							
+							<FlexBox justifyContent="End">
+								<Button text="Delete" type="Reject" icon="sap-icon://delete"></Button>
+							</FlexBox>
+						
+							<Table  id = "iconTable5Id" items = "{TenDataModel>/iconEmployee5}" mode="MultiSelect">
+						<columns>
+							<Column>
+								<Text text="Employee Id"></Text>
+							</Column>
+							<Column>
+								<Text text="Employee Work Mail"></Text>
+							</Column>
+							<Column>
+								<Text text="Employee Work Mobile No"></Text>
+							</Column>
+							<Column>
+								<Text text="Employee Language"></Text>
+							</Column>
+							<Column>
+								<Text text="Employee Work Type"></Text>
+							</Column>
+							<Column>
+								<Text text="Employee Designation"></Text>
+							</Column>
+							<Column>
+								<Text text="Employee Work location"></Text>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem  press="onRowTablePress5" type="Active">
+								<cells>
+									<Text text="{TenDataModel>oEmpId}"></Text>
+									<Text text="{TenDataModel>oEmpWorkMail}"></Text>
+									<Text text="{TenDataModel>oEmpWorkMobileNo}"></Text>
+									<Text text="{TenDataModel>oEmpLanguage}"></Text>
+									<Text text="{TenDataModel>oEmpCompanyType}"></Text>
+									<Text text="{TenDataModel>oEmpDesignation}"></Text>
+									<Text text="{TenDataModel>oEmpLocation}"></Text>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+						</IconTabFilter>
+						
+						
+						<IconTabFilter text="Skills"
+							icon="sap-icon://survey" key="tab6" iconColor="Positive">
+							
+							<FlexBox justifyContent="End">
+								<Button text="Delete" type="Reject" icon="sap-icon://delete"></Button>
+							</FlexBox>
+						
+							<Table  id = "iconTable6Id" items = "{TenDataModel>/iconEmployee6}" mode="MultiSelect">
+						<columns>
+							<Column>
+								<Text text="Employee Id"></Text>
+							</Column>
+							<Column>
+								<Text text="Employee College Name"></Text>
+							</Column>
+							<Column>
+								<Text text="Employee Company Name"></Text>
+							</Column>
+							<Column>
+								<Text text="Employee Experience"></Text>
+							</Column>
+							<Column>
+								<Text text="Employee Joined Date"></Text>
+							</Column>
+							<Column>
+								<Text text="Employee Technical Skills"></Text>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem  press="onRowTablePress6" type="Active">
+								<cells>
+									<Text text="{TenDataModel>oEmpId}"></Text>
+									<Text text="{TenDataModel>oEmpCollegeName}"></Text>
+									<Text text="{TenDataModel>oEmpCompanyName}"></Text>
+									<Text text="{TenDataModel>oEmpExperience}"></Text>
+									<Text text="{TenDataModel>oEmpJoinedDate}"></Text>
+									<Text text="{TenDataModel>oEmpTechnicalSkills}"></Text>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+						</IconTabFilter>
+					</items>
+				</IconTabBar>	
+				<content>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

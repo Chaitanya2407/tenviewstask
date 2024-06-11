@@ -1,0 +1,258 @@
+<mvc:View controllerName="com.dpz_Ten_Views_Task.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:layout="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form">
+	<App>
+		<pages>
+			<Page title="{i18n>1St View}">
+				<content>
+					<Title text="Student Form" ></Title>
+					<layout:Grid>
+						<Label text="{i18n>StudentName}" required="true">
+							<layoutData>
+								<layout:GridData span="L2 M3 S8" indent="L3 M3 S8"></layout:GridData>
+							</layoutData>
+						</Label>
+						<Input id="inputNameForm1" placeholder="Student Name" type="Text"></Input>
+						<Label text="{i18n>StudentRollNo}" required="true">
+							<layoutData>
+								<layout:GridData span="L2 M3 S8" indent="L3 M3 S8" linebreakL="true"></layout:GridData>
+							</layoutData>
+						</Label>
+						<Input id="inputRollNoForm1" placeholder="Roll Number" type="Number"></Input>
+						<Label text="{i18n>StudentMobileNo}" required="true">
+							<layoutData>
+								<layout:GridData span="L2 M3 S8" indent="L3 M3 S8" linebreakL="true"></layout:GridData>
+							</layoutData>
+						</Label>
+						<Input id="inputMobileNoForm1" placeholder="Mobile Number" type="Tel"></Input>
+						<Label text="{i18n>StudentClass}" required="true">
+							<layoutData>
+								<layout:GridData span="L2 M3 S8" indent="L3 M3 S8" linebreakL="true"></layout:GridData>
+							</layoutData>
+						</Label>
+						<HBox>
+							<RadioButton text="8Th" id="inputClass8Form1"></RadioButton>
+							<RadioButton text="9Th" id="inputClass9Form1" class="sapUiSmallMarginBegin"></RadioButton>
+							<RadioButton text="10Th" id="inputClass10Form1" class="sapUiSmallMarginBegin"></RadioButton>
+						</HBox>
+						<Label text="{i18n>StudentLanguage}" required="true">
+							<layoutData>
+								<layout:GridData span="L2 M3 S8" indent="L3 M3 S8" linebreakL="true"></layout:GridData>
+							</layoutData>
+						</Label>
+						<ComboBox id="inputLanguageForm1" placeholder="Select Language" items="{TenDataModel>/studentComboBox}" width="300px">
+							<core:Item key="{TenDataModel>key}" text="{TenDataModel>text}"></core:Item>
+						</ComboBox>
+						<Label text="{i18n>StudentSubject}" required="true">
+							<layoutData>
+								<layout:GridData span="L2 M3 S8" indent="L3 M3 S8" linebreakL="true"></layout:GridData>
+							</layoutData>
+						</Label>
+						<MultiComboBox id="inputSubjectForm1" placeholder="Select Subject" items="{TenDataModel>/studentMultiComboBox}">
+							<core:Item key="{TenDataModel>key}" text="{TenDataModel>text}"></core:Item>
+						</MultiComboBox>
+					</layout:Grid>
+					<Label></Label>
+					<FlexBox justifyContent="Center">
+						<Button text="Submit" press="onSubmitForm1" type="Emphasized" class="sapUiLargeMarginBegin"></Button>
+					</FlexBox>
+					
+					
+					<Label></Label>
+					
+					
+					
+					<form:SimpleForm id="simpleForm2View1" layout="ResponsiveGridLayout" editable="true" labelSpanXL="5" labelSpanL="4" labelSpanM="5" labelSpanS="3" emptySpanXL="4"
+						emptySpanL="4" emptySpanM="6" emptySpanS="3" columnsXL="6" columnsL="3" columnsM="3" title="Employee Form" visible="false">
+						<Label text="{i18n>employeeId}" required="true" design="Bold"></Label>
+						<Input placeholder="Employee Id" id="inputEmpIdForm1" type="Number"></Input>
+						<Label text="{i18n>employeeName} " required="true" design="Bold"></Label>
+						<Input placeholder="Employee Name" id="inputEmpNameForm1" type="Text"></Input>
+						<Label text="{i18n>employeeAge} " required="true" design="Bold"></Label>
+						<Input placeholder="Employee Age" id="inputEmpAgeForm1" type="Number"></Input>
+						<Label text="{i18n>employeeDesignation}" required="true" design="Bold"></Label>
+						<Input placeholder=" Employee Designation" id="inputEmpDesignationForm1" type="Text"></Input>
+						<Label text="{i18n>technicalSkills} " required="true" design="Bold"></Label>
+						<MultiComboBox placeholder="Technical Skills" id="inputEmpTechSkillsForm1" items="{TenDataModel>/employeeMultiComboBox}">
+							<core:Item key="{TenDataModel>key}" text="{TenDataModel>text}"></core:Item>
+						</MultiComboBox>
+						<Label text="{i18n>interestedJob} " required="true" design="Bold"></Label>
+						<MultiComboBox placeholder="Interested Job" id="inputEmpJobForm1" items="{TenDataModel>/employeeMultiComboBoxJob}">
+							<core:Item key="{TenDataModel>key}" text="{TenDataModel>text}"></core:Item>
+						</MultiComboBox>
+						<Label text="{i18n>Place}" required="true" design="Bold"></Label>
+						<ComboBox placeholder="Place" id="inputEmpPlaceForm1" items="{TenDataModel>/empComboBoxPlace}">
+							<core:Item key="{TenDataModel>key}" text="{TenDataModel>text}"></core:Item>
+						</ComboBox>
+						<Label></Label>
+						<FlexBox justifyContent="Center">
+							<Switch type="AcceptReject" state="false" change="onSwitchOn" id="switchBtn"></Switch>
+						</FlexBox>
+						</form:SimpleForm>
+							
+							
+						<Label></Label>
+						
+						
+						<Title id="companyFormTitle" text="Company Form" visible="false"></Title>
+						<Label></Label>
+						
+						<Panel id="panelForm" visible="false">
+							<FlexBox justifyContent="Center">
+								<Label text="{i18n>CompanyName}" required="true" class="sapUiLargeMarginEnd"></Label>
+								<Input id="companyName" type="Text" placeholder="Company Name" class="sapUiLargeMarginBegin"></Input>
+							</FlexBox>
+							<FlexBox justifyContent="Center">
+								<Label text="{i18n>CompanyFounded}" required="true" ></Label>
+								<DatePicker id="companyFounded"  class="sapUiLargeMarginBegin" displayFormat="dd.MM.YYYY"></DatePicker>
+							</FlexBox>
+							<FlexBox justifyContent="Center">
+								<Label text="{i18n>CompanyEmailId}" required="true" class="sapUiMediumMarginEnd"></Label>
+								<Input id="companyEmailId" type="Email" placeholder="Company Email Id" class="sapUiLargeMarginBegin"></Input>
+							</FlexBox>
+							<FlexBox justifyContent="Center">
+								<Label text="{i18n>CompanyMobileNumber}" required="true"></Label>
+								<Input id="companyMobileNo" type="Tel" placeholder="Company Mobile No" class="sapUiLargeMarginBegin"></Input>
+							</FlexBox>
+							<FlexBox justifyContent="Center">
+								<Label text="{i18n>NoOfEmployees}" required="true"></Label>
+								<ComboBox id="noOfEmployees" placeholder="No.Of Employees" class="sapUiLargeMarginBegin" items="{TenDataModel>/noOfEmployees}">
+								<core:Item key="{TenDataModel>key}" text="{TenDataModel>text}"></core:Item>
+								</ComboBox>
+							</FlexBox >
+							<FlexBox justifyContent="Center">
+								<Label text="{i18n>CompanyType}" required="true" class="sapUiLargeMarginEnd" ></Label>
+								<RadioButton id="companyTypeIt" text="IT" class="sapUiLargeMarginBegin"></RadioButton>
+								<RadioButton id="companyTypeNonIt" text="NON-IT" ></RadioButton>
+							</FlexBox>
+							<FlexBox justifyContent="Center">
+								<Label text="{i18n>CompanyServices}" required="true"></Label>
+								<MultiComboBox id="companyServices" placeholder="Company Services" class="sapUiLargeMarginBegin" items="{TenDataModel>/companyServices}">
+								<core:Item key="{TenDataModel>key}" text="{TenDataModel>text}"></core:Item>
+								</MultiComboBox>
+							</FlexBox>
+						</Panel>
+						
+						<Label>
+						</Label>
+						
+						<FlexBox justifyContent="Center">
+						<Button text="Submit" press="onSubmitFormPanel" type="Emphasized" class="sapUiLargeMarginBegin" id="panelButton" visible="false"></Button>
+						</FlexBox>
+						
+						<Label></Label>
+						
+						
+					<Title id="schoolFormTitle" text="School Form" visible="false"></Title>
+					<VBox id="vboxForm" visible="false">
+						<HBox justifyContent="Center">
+							<Label text="{i18n>studentName}" required="true" class="sapUiLargeMarginEnd"></Label>
+							<Input id="inputSName" placeholder="Student Name" class="sapUiLargeMarginEnd"></Input>
+						</HBox>
+						<HBox justifyContent="Center">
+							<Label text="{i18n>studentRollNo}" required="true" class="sapUiLargeMarginEnd"></Label>
+							<Input id="inputSRollNo" placeholder="Student Roll No" class="sapUiLargeMarginEnd"></Input>
+						</HBox>
+						<HBox justifyContent="Center">
+							<Label text="{i18n>studentAge}" required="true" class="sapUiLargeMarginEnd"></Label>
+							<Input id="inputSAge" placeholder="Student Age" class="sapUiSmallMarginBegin"></Input>
+						</HBox>
+						<HBox justifyContent="Center">
+							<Label text="{i18n>studentHobbies}" required="true" class="sapUiLargeMarginEnd"></Label>
+							<MultiComboBox id="inputSHobbies" placeholder="Student Hobbies" class="sapUiLargeMarginEnd" items="{TenDataModel>/studentHobbies}">
+								<core:Item key="{TenDataModel>key}" text="{TenDataModel>text}"></core:Item>
+							</MultiComboBox>
+						</HBox>
+						<HBox justifyContent="Center">
+							<Label text="{i18n>studentCity}" required="true" class="sapUiLargeMarginEnd"></Label>
+							<ComboBox id="inputSCity" placeholder="Student City" class="sapUiMediumMarginBegin" items="{TenDataModel>/studentCity}">
+								<core:Item key="{TenDataModel>key}" text="{TenDataModel>text}"></core:Item>
+							</ComboBox>
+						</HBox>
+						<HBox justifyContent="Center">
+							<Label text="{i18n>studentState}" required="true" class="sapUiLargeMarginEnd"></Label>
+							<ComboBox id="inputSState" placeholder="Student State" class="sapUiMediumMarginBegin" items="{TenDataModel>/studentState}"
+								change="onChangeView8">
+								<core:Item key="{TenDataModel>key}" text="{TenDataModel>text}"></core:Item>
+							</ComboBox>
+						</HBox>
+					</VBox>
+					<Label></Label>
+					<Title id="gridTitle" text="Person Form" visible="false"></Title>
+					<layout:Grid id="gridLayoutForm" visible="false">
+						<Label text="{i18n>personName}" required="true">
+							<layoutData>
+								<layout:GridData span="L2 M3 S8" indent="L3 M3 S8"></layout:GridData>
+							</layoutData>
+						</Label>
+						<Input id="personName" placeholder="Person Name" type="Text"></Input>
+						
+						<Label text="{i18n>personAge}" required="true">
+							<layoutData>
+								<layout:GridData span="L2 M3 S8" indent="L3 M3 S8" linebreakL="true"></layout:GridData>
+							</layoutData>
+						</Label>
+						<Input id="personAge" placeholder="Person Age" type="Number"></Input>
+						
+						<Label text="{i18n>personMobileNo}" required="true">
+							<layoutData>
+								<layout:GridData span="L2 M3 S8" indent="L3 M3 S8" linebreakL="true"></layout:GridData>
+							</layoutData>
+						</Label>
+						<Input id="personMobileNo" placeholder="Person Mobile Number" type="Tel"></Input>
+						
+						<Label text="{i18n>personEmailId}" required="true">
+							<layoutData>
+								<layout:GridData span="L2 M3 S8" indent="L3 M3 S8" linebreakL="true"></layout:GridData>
+							</layoutData>
+						</Label>
+						<Input id="personEmailId" placeholder="Person Email Id" type="Tel"></Input>
+						
+						<Label text="{i18n>personGender}" required="true">
+							<layoutData>
+								<layout:GridData span="L2 M3 S8" indent="L3 M3 S8" linebreakL="true"></layout:GridData>
+							</layoutData>
+						</Label>
+							<RadioButtonGroup columns = "2"> 
+								<RadioButton text="Male" id="personMale" ></RadioButton>
+								<RadioButton text="Female" id="personFemale" class="sapUiSmallMarginEnd"></RadioButton>
+							</RadioButtonGroup>
+
+						<Label text="{i18n>personResidence}" required="true">
+							<layoutData>
+								<layout:GridData span="L2 M3 S8" indent="L3 M3 S8" linebreakL="true"></layout:GridData>
+							</layoutData>
+						</Label>
+							<RadioButtonGroup  columns = "2">
+								<RadioButton text="Indian" id="personIndia" ></RadioButton>
+								<RadioButton text="Not Indian" id="personNotIndia" class="sapUiSmallMarginEnd"></RadioButton>
+							</RadioButtonGroup>
+
+						<Label text="{i18n>languagesknown}" required="true">
+							<layoutData>
+								<layout:GridData span="L2 M3 S8" indent="L3 M3 S8" linebreakL="true"></layout:GridData>
+							</layoutData>
+						</Label>
+						<MultiComboBox id="personLanguage" placeholder="Select Languages" items="{TenDataModel>/personlanguages}">
+							<core:Item key="{TenDataModel>key}" text="{TenDataModel>text}"></core:Item>
+						</MultiComboBox>
+						
+						<Label text="{i18n>personCity}" required="true">
+							<layoutData>
+								<layout:GridData span="L2 M3 S8" indent="L3 M3 S8" linebreakL="true"></layout:GridData>
+							</layoutData>
+						</Label>
+						<ComboBox id="personCity" placeholder="Select City" items="{TenDataModel>/personCity}" width="300px" change="onChangeView7">
+							<core:Item key="{TenDataModel>key}" text="{TenDataModel>text}"></core:Item>
+						</ComboBox>
+					</layout:Grid>
+					
+					
+					<VBox id="dynamicForm" visible="false" />
+					<FlexBox justifyContent="Center">
+						<VBox id="dynamicButton" class="sapUiLargeMarginBegin" visible="false" />
+					</FlexBox>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

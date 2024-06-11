@@ -1,0 +1,55 @@
+<mvc:View controllerName="com.dpz_Ten_Views_Task.controller.View6" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m"  xmlns:core="sap.ui.core">
+	<App>
+		<pages>
+			<Page title="{i18n>6Th View}" navButtonPress="backBtn" showNavButton="true">
+				<content>
+					<List headerText="Custom Content" items="{TenDataModel>/BookingArray}">
+						<CustomListItem>
+							<FlexBox justifyContent="Center">
+								<VBox>
+									<HBox>
+										<Label text="First Name" class="sapUiMediumMarginEnd"></Label>
+										<Text text="{TenDataModel>oFirstName}" class="sapUiMediumMarginBegin"></Text>
+									</HBox>
+									<HBox>
+										<Label text="Last Name"  class="sapUiMediumMarginEnd"></Label>
+										<Text text="{TenDataModel>oLastName}" class="sapUiMediumMarginBegin"></Text>
+									</HBox>
+									<HBox>
+										<Label text="Email Id"  class="sapUiMediumMarginEnd"></Label>
+										<Text text="{TenDataModel>oEmailId}" class="sapUiLargeMarginBegin"></Text>
+									</HBox>
+									<HBox>
+										<Label text="Mobile Number"  class="sapUiMediumMarginEnd"></Label>
+										<Text text="{TenDataModel>oMobileNo}" class="sapUiSmallMarginBegin"></Text>
+									</HBox>
+									<HBox>
+										<Label text="Bus Details"  class="sapUiMediumMarginEnd"></Label>
+										<Text text="{TenDataModel>oChooseBus}" class="sapUiMediumMarginBegin"></Text>
+									</HBox>
+									<HBox>
+										<Label text="Travelling Date"  class="sapUiMediumMarginEnd"></Label>
+										<Text text="{TenDataModel>oChooseDate}" class="sapUiLargeMarginBegin"></Text>
+									</HBox>
+									<HBox>
+										<Label text="Category"  class="sapUiMediumMarginEnd"></Label>
+										<Text text="{TenDataModel>oCategory}" class="sapUiLargeMarginBegin"></Text>
+									</HBox>
+									<HBox>
+										<Label text="Departure Time"  class="sapUiMediumMarginEnd"></Label>
+										<Text text="{TenDataModel>oDepartureTime}" class="sapUiSmallMarginBegin"></Text>
+									</HBox>
+									<HBox>
+										<Label text="Arraival Time"  class="sapUiMediumMarginEnd"></Label>
+										<Text text="{TenDataModel>oArraivalTime}" class="sapUiMediumMarginBegin"></Text>
+									</HBox>	
+								</VBox>
+							</FlexBox>
+						</CustomListItem>
+					</List>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

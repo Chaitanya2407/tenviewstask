@@ -1,0 +1,59 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form">
+	<Dialog title="{i18n>User Form}" contentWidth="1200px" xmlns:layout="sap.ui.layout">
+			<layout:Grid>
+						<Label text="Student Name" required="true">
+							<layoutData>
+								<layout:GridData span="L2 M3 S8" indent="L3 M3 S8"></layout:GridData>
+							</layoutData>
+						</Label>
+						<Input id="inputNameForm1"  value="{TenDataModel>/SelectedRow/oStudentName}"></Input>
+						<Label text="Student Roll Number" required="true">
+							<layoutData>
+								<layout:GridData span="L2 M3 S8" indent="L3 M3 S8" linebreakL="true"></layout:GridData>
+							</layoutData>
+						</Label>
+						<Input id="inputRollNoForm1" placeholder="Roll Number" type="Number" editable="false" value="{TenDataModel>/SelectedRow/oStudentRollNo}"></Input>
+						<Label text="Student Mobile Number" required="true">
+							<layoutData>
+								<layout:GridData span="L2 M3 S8" indent="L3 M3 S8" linebreakL="true"></layout:GridData>
+							</layoutData>
+						</Label>
+						<Input id="inputMobileNoForm1" type="Tel" value="{TenDataModel>/SelectedRow/oStudentMobileNo}"></Input>
+						<Label text="Student Class" required="true">
+							<layoutData>
+								<layout:GridData span="L2 M3 S8" indent="L3 M3 S8" linebreakL="true"></layout:GridData>
+							</layoutData>
+						</Label>
+						<HBox>
+							<RadioButton text="8Th" id="inputClass8Form1"></RadioButton>
+							<RadioButton text="9Th" id="inputClass9Form1" class="sapUiSmallMarginBegin"></RadioButton>
+							<RadioButton text="10Th" id="inputClass10Form1" class="sapUiSmallMarginBegin"></RadioButton>
+						</HBox>
+						<Label text="Student Language" required="true">
+							<layoutData>
+								<layout:GridData span="L2 M3 S8" indent="L3 M3 S8" linebreakL="true"></layout:GridData>
+							</layoutData>
+						</Label>
+						<ComboBox id="inputLanguageForm1" placeholder="Select Language" items="{TenDataModel>/studentComboBox}" value="{TenDataModel>/SelectedRow/oStudentLanguage}">
+							<core:Item key="{TenDataModel>key}" text="{TenDataModel>text}"></core:Item>
+
+						</ComboBox>
+						<Label text="Student Subject" required="true">
+							<layoutData>
+								<layout:GridData span="L2 M3 S8" indent="L3 M3 S8" linebreakL="true"></layout:GridData>
+							</layoutData>
+						</Label>
+						<MultiComboBox id="inputSubjectForm1" placeholder="Select Subject" items="{TenDataModel>/studentMultiComboBox}" >
+							<core:Item key="{TenDataModel>key}" text="{TenDataModel>text}"></core:Item>
+						</MultiComboBox>
+					</layout:Grid>
+					
+					<Label></Label>
+					
+					<FlexBox justifyContent="Center">
+						<Button text="SAVE" press="onSaveFragment1" type="Emphasized" class="sapUiLargeMarginBegin"></Button>
+					</FlexBox>
+					
+					<endButton>	<Button text="Close" press="onCloseFn1" type="Reject"> </Button> </endButton>
+	</Dialog>
+	</core:FragmentDefinition>
